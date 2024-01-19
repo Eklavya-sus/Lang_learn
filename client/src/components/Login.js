@@ -18,7 +18,7 @@ const Login = () => {
     console.log('Login form submitted');
     
     try {
-      const response = await fetch('http://lang-learn-gilt.vercel.app/api/auth/login', {
+      const response = await fetch('https://lang-learn-gilt.vercel.app/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

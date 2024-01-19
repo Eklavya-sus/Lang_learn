@@ -13,7 +13,7 @@ function EnglishQuiz() {
   useEffect(() => {
     const fetchQuestion = async () => {
       try {
-        const response = await fetch(`http://lang-learn-gilt.vercel.app/api/questions/english/${questionId}`);
+        const response = await fetch(`https://lang-learn-gilt.vercel.app/api/questions/english/${questionId}`);
         const data = await response.json();
         setQuestion(data);
         setSelectedAnswer(null);
