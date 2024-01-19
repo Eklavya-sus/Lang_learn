@@ -9,12 +9,11 @@ const cors = require('cors');
 // Available routes
 app.use(cors(
   {
-      origin: ["https://lang-learn-wdbz.vercel.app/"],
+      origin: ["https://lang-learn-wdbz.vercel.app"],
       methods: ["POST", "GET"],
       credentials: true
   }
 ));
-app.use(cors());
 app.use(express.json());
 
 // Import and use the auth route
