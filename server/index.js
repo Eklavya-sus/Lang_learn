@@ -7,7 +7,13 @@ const port = 4000;
 const cors = require('cors');
 
 // Available routes
-app.use(cors());
+app.use(cors(
+  {
+      origin: ["http://localhost:3000/"],
+      methods: ["POST", "GET"],
+      credentials: true
+  }
+));
 app.use(express.json());
 
 // Import and use the auth route
