@@ -9,7 +9,7 @@ export default function Profile() {
         // Fetch highest score from the backend API
         const fetchHighestScore = async () => {
             try {
-                const response = await fetch('http://localhost:4000/api/highestScore/save-highest-score', {
+                const response = await fetch('http://lang-learn-gilt.vercel.app/api/highestScore/save-highest-score', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
