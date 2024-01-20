@@ -12,7 +12,7 @@ const SignUp = () => {
     const { name, email, password } = credentials;
 
     try {
-      const response = await fetch('https://lang-learn-gilt.vercel.app/api/auth/createuser', {
+      const response = await fetch('http://localhost:4000/api/auth/createuser', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
