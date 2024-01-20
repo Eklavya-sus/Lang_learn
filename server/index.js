@@ -9,7 +9,7 @@ const cors = require('cors');
 // Available routes
 app.use(cors(
   {
-      origin: ["http://localhost:3000"],
+      origin: ["https://lang-learn-wdbz.vercel.app"],
       methods: ["POST", "GET"],
       credentials: true
   }
